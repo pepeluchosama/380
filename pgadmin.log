@@ -1,0 +1,443 @@
+2018-01-08 17:22:12 ERROR  : ERROR:  error de sintaxis en o cerca de «)»
+LINE 4: ...ID =budLineBaseRes.get_ValueAsInt("M_Product_Category_ID"));
+                                                                     ^
+2018-01-08 17:51:01 ERROR  : ERROR:  no existe la columna «docstatus» en la relación «gl_budgetcontrolline»
+LINE 1: update gl_budgetcontrolline set docstatus='AJ' where gl_budg...
+                                        ^
+2018-01-09 12:36:56 ERROR  : Error connecting to the server: FATAL:  no se pudo cargar pg_hba.conf
+
+2018-01-09 12:37:04 ERROR  : Error connecting to the server: FATAL:  no se pudo cargar pg_hba.conf
+
+2018-01-09 17:02:46 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2018-01-09 17:05:24 ERROR  : ERROR:  error de sintaxis en o cerca de «and»
+LINE 1: ... from mp_Response where mp_indicatordetail_id = ? and varbre...
+                                                             ^
+2018-01-09 17:10:20 ERROR  : ERROR:  el argumento de AND debe ser de tipo boolean, no tipo numeric
+LINE 1: ...esponse where mp_indicatordetail_id = 1000348 and c_period_i...
+                                                             ^
+2018-01-09 18:55:05 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2018-01-09 18:58:30 ERROR  : ERROR:  error de sintaxis en o cerca de «from»
+LINE 1: ...mulatedamt = 0 then 1 else a.cumulatedamt end),1))from mp_in...
+                                                             ^
+2018-01-09 18:58:37 ERROR  : ERROR:  error de sintaxis en o cerca de «end»
+LINE 1: ...ulatedamt = 0 then 1 else a.cumulatedamt end),1)) end from m...
+                                                             ^
+2018-01-09 18:58:57 ERROR  : ERROR:  error de sintaxis en o cerca de «from»
+LINE 4: ...ulatedamt = 0 then 1 else a.cumulatedamt end),1)) from mp_in...
+                                                             ^
+2018-01-09 19:02:19 ERROR  : ERROR:  error de sintaxis en o cerca de «end»
+LINE 2: ... a.cumulatedamt = 0 then 1 else a.cumulatedamt end),1)) end 
+                                                                   ^
+2018-01-09 19:02:37 ERROR  : ERROR:  error de sintaxis en o cerca de «end»
+LINE 2: ... a.cumulatedamt = 0 then 1 else a.cumulatedamt end),1)) end 
+                                                                   ^
+2018-01-09 19:03:06 ERROR  : ERROR:  error de sintaxis en o cerca de «)»
+LINE 2: ....cumulatedamt = 0 then 1 else a.cumulatedamt end),1)) --end 
+                                                               ^
+2018-01-09 19:03:11 ERROR  : ERROR:  error de sintaxis en o cerca de «from»
+LINE 3: from mp_indicatordetail a where a.mp_indicatordetail_id = 10...
+        ^
+2018-01-09 19:03:46 ERROR  : ERROR:  error de sintaxis en o cerca de «from»
+LINE 3: from mp_indicatordetail a where a.mp_indicatordetail_id = 10...
+        ^
+2018-01-09 19:04:25 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 1: ...,1) from mp_planification b where b.mp_indicator_id = 121301
+                                                                       ^
+2018-01-09 19:06:09 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 1: ...,1) from mp_planification b where b.mp_indicator_id = 121301
+                                                                       ^
+2018-01-09 19:10:05 ERROR  : ERROR:  error de sintaxis en o cerca de «from»
+LINE 7: from mp_indicatordetail a where a.mp_indicatordetail_id = 10...
+        ^
+2018-01-10 12:18:22 ERROR  : ERROR:  no existe la columna a.issotrx
+LINE 12: a.issotrx='Y' and 
+         ^
+HINT:  Perhaps you meant to reference the column "i.issotrx".
+2018-01-10 18:33:33 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2018-01-10 19:06:53 ERROR  : ERROR:  error de sintaxis en o cerca de «)»
+LINE 2: ...rom fact_acct where account_id = 1000062 and amtacctcr > 0))
+                                                                      ^
+2018-01-11 09:30:23 ERROR  : ERROR:  no existe la relación «c_product»
+LINE 1: SELECT * FROM C_PRODUCT
+                      ^
+2018-01-11 10:40:20 ERROR  : ERROR:  falta una entrada para la tabla «i» en la cláusula FROM
+LINE 4: i.c_invoice_id,
+        ^
+2018-01-11 10:43:08 ERROR  : ERROR:  la referencia a la columna «ad_client_id» es ambigua
+LINE 15: where i.isactive='Y' and ad_client_id = 1000000
+                                  ^
+2018-01-11 10:44:25 ERROR  : ERROR:  error de sintaxis en o cerca de «order»
+LINE 17: order by i.c_invoice_id
+         ^
+2018-01-11 10:45:45 ERROR  : ERROR:  error de sintaxis en o cerca de «case»
+LINE 13: case when abs(al.amount)>0 then al.amount else al.writeoffam...
+         ^
+2018-01-12 15:03:25 ERROR  : ERROR:  error de sintaxis en o cerca de «validfrom»
+LINE 1: ...de = 'UTM' AND cu2.Iso_Code = 'CLP' AND ? BETWEEN validfrom ...
+                                                             ^
+2018-02-05 09:08:15 ERROR  : ERROR:  update o delete en «c_order» viola la llave foránea «corder_cinvoice» en la tabla «c_invoice»
+DETAIL:  La llave (c_order_id)=(2000155) todavía es referida desde la tabla «c_invoice».
+2018-02-05 09:08:28 ERROR  : ERROR:  update o delete en «c_invoice» viola la llave foránea «cinvoice_callocationline» en la tabla «c_allocationline»
+DETAIL:  La llave (c_invoice_id)=(2000054) todavía es referida desde la tabla «c_allocationline».
+2018-02-05 09:08:52 ERROR  : ERROR:  update o delete en «c_invoice» viola la llave foránea «cinvoice_cpayment» en la tabla «c_payment»
+DETAIL:  La llave (c_invoice_id)=(2000054) todavía es referida desde la tabla «c_payment».
+2018-02-05 09:09:05 ERROR  : ERROR:  update o delete en «c_invoice» viola la llave foránea «cinvoice_cpaymentallocate» en la tabla «c_paymentallocate»
+DETAIL:  La llave (c_invoice_id)=(2000052) todavía es referida desde la tabla «c_paymentallocate».
+2018-02-05 09:09:18 ERROR  : ERROR:  update o delete en «c_invoice» viola la llave foránea «cinvoice_aassetaddition» en la tabla «a_asset_addition»
+DETAIL:  La llave (c_invoice_id)=(2000076) todavía es referida desde la tabla «a_asset_addition».
+2018-02-05 09:09:31 ERROR  : ERROR:  update o delete en «c_invoiceline» viola la llave foránea «minvoiceline_mcostdetail» en la tabla «m_costdetail»
+DETAIL:  La llave (c_invoiceline_id)=(2000067) todavía es referida desde la tabla «m_costdetail».
+2018-02-05 09:09:42 ERROR  : ERROR:  update o delete en «c_invoiceline» viola la llave foránea «convoiceline_mmatchinv» en la tabla «m_matchinv»
+DETAIL:  La llave (c_invoiceline_id)=(2000066) todavía es referida desde la tabla «m_matchinv».
+2018-02-05 09:09:58 ERROR  : ERROR:  update o delete en «c_invoiceline» viola la llave foránea «cinvoiceline_mmatchpo» en la tabla «m_matchpo»
+DETAIL:  La llave (c_invoiceline_id)=(2000077) todavía es referida desde la tabla «m_matchpo».
+2018-02-05 09:10:11 ERROR  : ERROR:  update o delete en «c_order» viola la llave foránea «corder_ppmrp» en la tabla «pp_mrp»
+DETAIL:  La llave (c_order_id)=(2000155) todavía es referida desde la tabla «pp_mrp».
+2018-02-05 09:10:21 ERROR  : ERROR:  update o delete en «c_order» viola la llave foránea «corder_minout» en la tabla «m_inout»
+DETAIL:  La llave (c_order_id)=(2000275) todavía es referida desde la tabla «m_inout».
+2018-02-05 09:10:31 ERROR  : ERROR:  update o delete en «m_inoutline» viola la llave foránea «minoutline_cinvoiceline» en la tabla «c_invoiceline»
+DETAIL:  La llave (m_inoutline_id)=(2000074) todavía es referida desde la tabla «c_invoiceline».
+2018-02-05 09:10:44 ERROR  : ERROR:  update o delete en «m_inoutline» viola la llave foránea «minoutline_cinvoiceline» en la tabla «c_invoiceline»
+DETAIL:  La llave (m_inoutline_id)=(2000074) todavía es referida desde la tabla «c_invoiceline».
+2018-02-05 09:11:25 ERROR  : ERROR:  update o delete en «c_invoice» viola la llave foránea «cinvoice_cpayment» en la tabla «c_payment»
+DETAIL:  La llave (c_invoice_id)=(2000012) todavía es referida desde la tabla «c_payment».
+2018-02-05 09:11:52 ERROR  : ERROR:  error de sintaxis en o cerca de «>»
+LINE 1: delete from c_payment where c_payment_id = > 2000000
+                                                   ^
+2018-02-05 09:11:55 ERROR  : ERROR:  update o delete en «c_payment» viola la llave foránea «cpayment_cpayselectioncheck» en la tabla «c_payselectioncheck»
+DETAIL:  La llave (c_payment_id)=(2000006) todavía es referida desde la tabla «c_payselectioncheck».
+2018-02-05 09:12:06 ERROR  : ERROR:  update o delete en «c_payselectioncheck» viola la llave foránea «cpayselcheck_cpayselline» en la tabla «c_payselectionline»
+DETAIL:  La llave (c_payselectioncheck_id)=(2000000) todavía es referida desde la tabla «c_payselectionline».
+2018-02-05 09:12:27 ERROR  : ERROR:  update o delete en «c_payment» viola la llave foránea «cpayment_callocationline» en la tabla «c_allocationline»
+DETAIL:  La llave (c_payment_id)=(2000059) todavía es referida desde la tabla «c_allocationline».
+2018-02-05 09:12:48 ERROR  : ERROR:  no existe la columna «c_allocationline_id»
+LINE 1: delete from c_allocationhdr where c_allocationline_id > 2000...
+                                          ^
+2018-02-05 09:12:57 ERROR  : ERROR:  update o delete en «c_invoice» viola la llave foránea «cinvoice_ccashline» en la tabla «c_cashline»
+DETAIL:  La llave (c_invoice_id)=(2000022) todavía es referida desde la tabla «c_cashline».
+2018-02-05 09:13:06 ERROR  : ERROR:  update o delete en «c_cashline» viola la llave foránea «ccashline_cinvoice» en la tabla «c_invoice»
+DETAIL:  La llave (c_cashline_id)=(2000009) todavía es referida desde la tabla «c_invoice».
+2018-02-05 09:13:57 ERROR  : ERROR:  update o delete en «c_cashline» viola la llave foránea «ccashline_cinvoice» en la tabla «c_invoice»
+DETAIL:  La llave (c_cashline_id)=(2000009) todavía es referida desde la tabla «c_invoice».
+2018-02-05 09:14:15 ERROR  : ERROR:  update o delete en «c_cashline» viola la llave foránea «ccashline_cinvoice» en la tabla «c_invoice»
+DETAIL:  La llave (c_cashline_id)=(2000009) todavía es referida desde la tabla «c_invoice».
+2018-02-05 09:14:32 ERROR  : ERROR:  update o delete en «c_invoiceline» viola la llave foránea «cinvoiceline_mmatchpo» en la tabla «m_matchpo»
+DETAIL:  La llave (c_invoiceline_id)=(2000071) todavía es referida desde la tabla «m_matchpo».
+2018-02-05 09:14:45 ERROR  : ERROR:  update o delete en «c_invoiceline» viola la llave foránea «cinvoiceline_mmatchpo» en la tabla «m_matchpo»
+DETAIL:  La llave (c_invoiceline_id)=(2000071) todavía es referida desde la tabla «m_matchpo».
+2018-02-05 09:15:08 ERROR  : ERROR:  update o delete en «c_invoiceline» viola la llave foránea «convoiceline_mmatchinv» en la tabla «m_matchinv»
+DETAIL:  La llave (c_invoiceline_id)=(2000071) todavía es referida desde la tabla «m_matchinv».
+2018-02-05 09:15:26 ERROR  : ERROR:  update o delete en «m_inoutline» viola la llave foránea «minoutline_mtransaction» en la tabla «m_transaction»
+DETAIL:  La llave (m_inoutline_id)=(2000165) todavía es referida desde la tabla «m_transaction».
+2018-02-05 09:15:41 ERROR  : ERROR:  update o delete en «c_order» viola la llave foránea «corder_minout» en la tabla «m_inout»
+DETAIL:  La llave (c_order_id)=(2000095) todavía es referida desde la tabla «m_inout».
+2018-02-05 09:15:57 ERROR  : ERROR:  update o delete en «c_orderline» viola la llave foránea «corderline_mrequisitionline» en la tabla «m_requisitionline»
+DETAIL:  La llave (c_orderline_id)=(2000306) todavía es referida desde la tabla «m_requisitionline».
+2018-02-05 09:16:09 ERROR  : ERROR:  update o delete en «c_orderline» viola la llave foránea «corderline_mrequisitionline» en la tabla «m_requisitionline»
+DETAIL:  La llave (c_orderline_id)=(2000333) todavía es referida desde la tabla «m_requisitionline».
+2018-02-05 10:04:11 ERROR  : ERROR:  update o delete en «m_product» viola la llave foránea «mproduct_mcost» en la tabla «m_cost»
+DETAIL:  La llave (m_product_id)=(2001131) todavía es referida desde la tabla «m_cost».
+2018-02-05 10:04:27 ERROR  : ERROR:  update o delete en «m_product» viola la llave foránea «mproduct_minventoryline» en la tabla «m_inventoryline»
+DETAIL:  La llave (m_product_id)=(2001131) todavía es referida desde la tabla «m_inventoryline».
+2018-02-05 10:04:56 ERROR  : ERROR:  update o delete en «m_product» viola la llave foránea «mproduct_cuomconversion» en la tabla «c_uom_conversion»
+DETAIL:  La llave (m_product_id)=(2000886) todavía es referida desde la tabla «c_uom_conversion».
+2018-02-05 10:05:11 ERROR  : ERROR:  update o delete en «m_product» viola la llave foránea «m_product_fact_acct» en la tabla «fact_acct»
+DETAIL:  La llave (m_product_id)=(2001550) todavía es referida desde la tabla «fact_acct».
+2018-02-05 10:56:54 ERROR  : ERROR:  update o delete en «m_product» viola la llave foránea «mproduct_corderline» en la tabla «c_orderline»
+DETAIL:  La llave (m_product_id)=(2001550) todavía es referida desde la tabla «c_orderline».
+2018-02-06 16:37:56 ERROR  : ERROR:  update o delete en «c_bpartner» viola la llave foránea «cbpartner_cproject» en la tabla «c_project»
+DETAIL:  La llave (c_bpartner_id)=(2007772) todavía es referida desde la tabla «c_project».
+2018-02-06 16:38:44 ERROR  : ERROR:  update o delete en «c_project» viola la llave foránea «pm_projectpay_project» en la tabla «pm_projectpay»
+DETAIL:  La llave (c_project_id)=(2000008) todavía es referida desde la tabla «pm_projectpay».
+2018-02-06 16:40:05 ERROR  : ERROR:  update o delete en «c_bpartner» viola la llave foránea «cbpartner_adarchive» en la tabla «ad_archive»
+DETAIL:  La llave (c_bpartner_id)=(2000655) todavía es referida desde la tabla «ad_archive».
+2018-02-06 16:45:33 ERROR  : ERROR:  update o delete en «c_bpartner» viola la llave foránea «cbpartner_hremployee» en la tabla «hr_employee»
+DETAIL:  La llave (c_bpartner_id)=(2007505) todavía es referida desde la tabla «hr_employee».
+2018-02-06 16:45:50 ERROR  : ERROR:  update o delete en «hr_employee» viola la llave foránea «hremployee_hremployeeexperienc» en la tabla «hr_employeeexperience»
+DETAIL:  La llave (hr_employee_id)=(2000000) todavía es referida desde la tabla «hr_employeeexperience».
+2018-02-06 16:47:20 ERROR  : ERROR:  update o delete en «ad_user» viola la llave foránea «aduser_aduserorgaccess» en la tabla «ad_user_orgaccess»
+DETAIL:  La llave (ad_user_id)=(2002624) todavía es referida desde la tabla «ad_user_orgaccess».
+2018-02-06 16:55:01 ERROR  : ERROR:  update o delete en «ad_user» viola la llave foránea «ad_user_preference» en la tabla «ad_preference»
+DETAIL:  La llave (ad_user_id)=(2000678) todavía es referida desde la tabla «ad_preference».
+2018-02-06 16:58:26 ERROR  : ERROR:  update o delete en «ad_user» viola la llave foránea «aduser_adnote» en la tabla «ad_note»
+DETAIL:  La llave (ad_user_id)=(2000678) todavía es referida desde la tabla «ad_note».
+2018-02-06 17:02:23 ERROR  : ERROR:  update o delete en «ad_user» viola la llave foránea «aduser_adwfeventaudit» en la tabla «ad_wf_eventaudit»
+DETAIL:  La llave (ad_user_id)=(2000678) todavía es referida desde la tabla «ad_wf_eventaudit».
+2018-02-06 17:03:57 ERROR  : ERROR:  update o delete en «ad_user» viola la llave foránea «aduser_adwfprocess» en la tabla «ad_wf_process»
+DETAIL:  La llave (ad_user_id)=(2000678) todavía es referida desde la tabla «ad_wf_process».
+2018-02-06 17:05:21 ERROR  : ERROR:  update o delete en «ad_user» viola la llave foránea «aduser_pinstance» en la tabla «ad_pinstance»
+DETAIL:  La llave (ad_user_id)=(2000678) todavía es referida desde la tabla «ad_pinstance».
+2018-02-06 17:06:52 ERROR  : ERROR:  update o delete en «ad_user» viola la llave foránea «aduser_aasset» en la tabla «a_asset»
+DETAIL:  La llave (ad_user_id)=(2003041) todavía es referida desde la tabla «a_asset».
+2018-02-06 17:07:25 ERROR  : ERROR:  update o delete en «a_asset» viola la llave foránea «aasset_adepreciationworkfile» en la tabla «a_depreciation_workfile»
+DETAIL:  La llave (a_asset_id)=(2001262) todavía es referida desde la tabla «a_depreciation_workfile».
+2018-02-06 17:08:18 ERROR  : ERROR:  no existe la relación «a_asset_history»
+LINE 1: delete from a_asset_history where ad_Client_id = 2000006 and...
+                    ^
+2018-02-06 17:13:45 ERROR  : ERROR:  update o delete en «a_asset» viola la llave foránea «aasset_aassetchange» en la tabla «a_asset_change»
+DETAIL:  La llave (a_asset_id)=(2000107) todavía es referida desde la tabla «a_asset_change».
+2018-02-06 17:25:00 ERROR  : ERROR:  update o delete en «ad_user» viola la llave foránea «aduser_mmovement» en la tabla «m_movement»
+DETAIL:  La llave (ad_user_id)=(2000980) todavía es referida desde la tabla «m_movement».
+2018-02-06 17:26:45 ERROR  : ERROR:  update o delete en «ad_user» viola la llave foránea «aduser_sresource» en la tabla «s_resource»
+DETAIL:  La llave (ad_user_id)=(2000980) todavía es referida desde la tabla «s_resource».
+2018-02-06 17:27:45 ERROR  : ERROR:  update o delete en «s_resource» viola la llave foránea «sresource_mproduct» en la tabla «m_product»
+DETAIL:  La llave (s_resource_id)=(2000006) todavía es referida desde la tabla «m_product».
+2018-02-06 17:27:56 ERROR  : ERROR:  no existe la columna «ad_user_id»
+LINE 1: delete from m_product where ad_user_id in (select ad_user_id...
+                                    ^
+2018-02-06 17:28:02 ERROR  : ERROR:  update o delete en «s_resource» viola la llave foránea «sresource_mproduct» en la tabla «m_product»
+DETAIL:  La llave (s_resource_id)=(2000006) todavía es referida desde la tabla «m_product».
+2018-02-06 17:30:21 ERROR  : ERROR:  update o delete en «ad_user» viola la llave foránea «aduser_supervisor» en la tabla «ad_user»
+DETAIL:  La llave (ad_user_id)=(2002607) todavía es referida desde la tabla «ad_user».
+2018-02-06 17:33:08 ERROR  : ERROR:  update o delete en «ad_user» viola la llave foránea «salesrep_mproduct» en la tabla «m_product»
+DETAIL:  La llave (ad_user_id)=(2000034) todavía es referida desde la tabla «m_product».
+2018-02-06 17:35:20 ERROR  : ERROR:  update o delete en «ad_user» viola la llave foránea «aduser_corgassignment» en la tabla «c_orgassignment»
+DETAIL:  La llave (ad_user_id)=(2000390) todavía es referida desde la tabla «c_orgassignment».
+2018-02-07 10:22:32 ERROR  : ERROR:  update o delete en «ad_role» viola la llave foránea «adrole_adbrowseaccess» en la tabla «ad_browse_access»
+DETAIL:  La llave (ad_role_id)=(2000015) todavía es referida desde la tabla «ad_browse_access».
+2018-02-07 10:23:22 ERROR  : ERROR:  update o delete en «ad_role» viola la llave foránea «adrole_addocumentactionaccess» en la tabla «ad_document_action_access»
+DETAIL:  La llave (ad_role_id)=(2000015) todavía es referida desde la tabla «ad_document_action_access».
+2018-02-07 10:23:38 ERROR  : ERROR:  update o delete en «ad_role» viola la llave foránea «adrole_adsession» en la tabla «ad_session»
+DETAIL:  La llave (ad_role_id)=(2000015) todavía es referida desde la tabla «ad_session».
+2018-02-07 10:23:49 ERROR  : ERROR:  update o delete en «ad_session» viola la llave foránea «adsession_adchangelog» en la tabla «ad_changelog»
+DETAIL:  La llave (ad_session_id)=(2000180) todavía es referida desde la tabla «ad_changelog».
+2018-02-07 10:26:36 ERROR  : ERROR:  update o delete en «ad_role» viola la llave foránea «adrole_adbrowseaccess» en la tabla «ad_browse_access»
+DETAIL:  La llave (ad_role_id)=(2000044) todavía es referida desde la tabla «ad_browse_access».
+2018-02-07 10:27:05 ERROR  : ERROR:  update o delete en «ad_role» viola la llave foránea «adrole_addocumentactionaccess» en la tabla «ad_document_action_access»
+DETAIL:  La llave (ad_role_id)=(2000044) todavía es referida desde la tabla «ad_document_action_access».
+2018-02-07 10:27:19 ERROR  : ERROR:  update o delete en «ad_role» viola la llave foránea «adrole_adsession» en la tabla «ad_session»
+DETAIL:  La llave (ad_role_id)=(2000044) todavía es referida desde la tabla «ad_session».
+2018-02-07 10:27:29 ERROR  : ERROR:  update o delete en «ad_session» viola la llave foránea «adsession_adchangelog» en la tabla «ad_changelog»
+DETAIL:  La llave (ad_session_id)=(2000647) todavía es referida desde la tabla «ad_changelog».
+2018-02-09 12:43:25 ERROR  : ERROR:  no existe la columna i.discount
+LINE 3: ..._id, i.grandtotal, i.dateinvoiced, i.dateprinted, i.discount
+                                                             ^
+2018-02-12 16:26:05 ERROR  : ERROR:  error de sintaxis en o cerca de «¨from»
+LINE 1: select *¨from m_Transaction where m_transaction_id = 2050970
+                ^
+2018-02-12 17:19:22 ERROR  : ERROR:  error de sintaxis en o cerca de «disable»
+LINE 1: alter trigger tg_ft_updateqty disable
+                                      ^
+2018-02-12 17:19:30 ERROR  : ERROR:  error de sintaxis en o cerca de «disable»
+LINE 1: alter trigger tg_ft_updateqty disable
+                                      ^
+2018-02-13 14:50:45 ERROR  : ERROR:  no existe la columna «m_product_id»
+LINE 1: select * from m_costelement order by m_product_id
+                                             ^
+2018-02-15 09:56:14 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:05:17 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:05:19 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:05:20 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:05:21 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:05:38 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:05:38 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:05:39 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:05:39 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:05:39 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:05:39 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:05:40 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:05:40 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:05:40 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:05:42 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:06:38 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:06:39 ERROR  : ERROR:  no existe la columna «hoursused»
+LINE 1: select hoursused from hr_employee
+               ^
+2018-02-15 11:06:48 ERROR  : ERROR:  no existe la columna «hoursearned»
+LINE 1: select hoursearned from hr_employee
+               ^
+2018-02-15 11:06:48 ERROR  : ERROR:  no existe la columna «hoursearned»
+LINE 1: select hoursearned from hr_employee
+               ^
+2018-02-15 11:52:30 ERROR  : ERROR:  no existe la columna «istaxable»
+LINE 1: select istaxable from hr_welfare
+               ^
+2018-02-16 12:24:02 ERROR  : ERROR:  database "MOP20180216" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2018-02-16 12:24:49 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2018-02-16 12:25:33 ERROR  : ERROR:  database "MOP20180216" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+2018-02-19 11:53:04 ERROR  : ERROR:  no se puede cambiar el nombre de la columna «m_product_id» de la vista a «value»
+2018-02-19 11:53:44 ERROR  : ERROR:  no se puede cambiar el nombre de la columna «m_product_id» de la vista a «value»
+2018-02-19 11:55:35 ERROR  : ERROR:  no se puede cambiar el nombre de la columna «qtyordered» de la vista a «description»
+2018-02-19 11:57:11 ERROR  : ERROR:  no se puede cambiar el nombre de la columna «warehousename» de la vista a «warehouse»
+2018-02-19 11:59:32 ERROR  : ERROR:  no se pueden eliminar columnas de una vista
+2018-02-19 11:59:34 ERROR  : ERROR:  no se pueden eliminar columnas de una vista
+2018-02-19 13:07:44 ERROR  : ERROR:  no se puede cambiar el tipo de dato de la columna «qtyavailable» de la vista de numeric a integer
+2018-02-22 14:15:25 ERROR  : ERROR:  no existe la columna «c_doctype_id»
+LINE 1: select c_doctype_id from c_cash
+               ^
+2018-02-26 17:49:56 ERROR  : ERROR:  no existe la relación «c_bp_acct»
+LINE 1: select * from c_bp_acct
+                      ^
+2018-02-26 21:38:49 ERROR  : ERROR:  no existe la relación «av_invoicehist»
+LINE 1: select * from av_invoicehist
+                      ^
+2018-02-27 09:47:58 ERROR  : ERROR:  error de sintaxis en o cerca de «as»
+LINE 2: ...voiceline a where a.c_invoice_id=ci.c_invoice_id)) as region
+                                                              ^
+2018-02-27 09:48:12 ERROR  : ERROR:  error de sintaxis en o cerca de «region»
+LINE 2: ..._invoiceline a where a.c_invoice_id=ci.c_invoice_id)) region
+                                                                 ^
+2018-02-27 09:50:10 ERROR  : ERROR:  error de sintaxis en o cerca de «as»
+LINE 2: ...nvoiceline a where a.c_invoice_id=ci.c_invoice_id) as region
+                                                              ^
+2018-02-27 10:06:24 ERROR  : ERROR:  error de sintaxis en o cerca de «select»
+LINE 11: select * from c_region where c_region_id = 16
+         ^
+2018-02-27 10:07:12 ERROR  : ERROR:  falta una entrada para la tabla «c» en la cláusula FROM
+LINE 7: left join c_region cr on c.c_region_id=cr.c_region_id
+                                 ^
+2018-02-27 10:07:23 ERROR  : ERROR:  error de sintaxis en o cerca de «select»
+LINE 11: select * from c_region where c_region_id = 16
+         ^
+2018-02-27 21:23:52 ERROR  : ERROR:  error de sintaxis en o cerca de «end»
+LINE 16: end;
+         ^
+2018-02-27 21:27:19 ERROR  : ERROR:  error de sintaxis en o cerca de «return»
+LINE 18: return null;
+         ^
+2018-02-27 21:34:50 ERROR  : ERROR:  expresión faltante en o cerca de «;»
+LINE 11: return;
+               ^
+2018-02-27 21:44:58 ERROR  : ERROR:  error de sintaxis en o cerca de «old»
+LINE 17: raise exception old.c_Cash_id;
+                         ^
+2018-02-27 21:45:23 ERROR  : ERROR:  error de sintaxis en o cerca de «old»
+LINE 17: raise exception '%' old.c_Cash_id;
+                             ^
+2018-02-27 22:40:58 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2018-02-27 23:08:08 ERROR  : ERROR:  no existe el trigger «tg_ofbtp_ft_updatecas» para la tabla «c_cash»
+2018-02-27 23:13:14 ERROR  : ERROR:  error de sintaxis en o cerca de «create»
+LINE 36: create trigger tg_ofbtp_ft_updatecash after insert on c_Cash...
+         ^
+2018-02-27 23:14:17 ERROR  : ERROR:  error de sintaxis en o cerca de «old»
+LINE 24: raise exception old.endingbalance;
+                         ^
+2018-02-27 23:14:25 ERROR  : ERROR:  no existe el trigger «tg_ofbtp_ft_updatecash» para la tabla «c_cash»
+2018-02-27 23:15:42 ERROR  : ERROR:  ya existe un trigger «tg_ofbtp_ft_updatecash» para la relación «c_cash»
+2018-03-01 10:56:49 ERROR  : ERROR:  error de sintaxis en o cerca de «C_Order»
+LINE 1: C_Order.C_Order_ID, 2000021 : Loader - SELECT C_Order.C_Orde...
+        ^
+2018-03-01 10:56:53 ERROR  : ERROR:  error de sintaxis en o cerca de «)»
+LINE 1: ... (C_Order.DateOrdered AS Text),'-1') ||'_'|| NVL((),'-1'),C_...
+                                                             ^
+2018-03-01 10:57:18 ERROR  : ERROR:  no existe la función nvl(character varying, unknown)
+LINE 1: SELECT C_Order.C_Order_ID,NULL,NVL(C_Order.DocumentNo,'-1') ...
+                                       ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2018-03-01 10:59:06 ERROR  : ERROR:  no existe la función nvl(text, unknown)
+LINE 1: ...ID,NULL,coalesce(C_Order.DocumentNo,'-1') ||'_'|| NVL(CAST (...
+                                                             ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2018-03-01 10:59:09 ERROR  : ERROR:  no existe la función nvl(unknown, unknown)
+LINE 1: ...(CAST (C_Order.DateOrdered AS Text),'-1') ||'_'|| NVL('1','-...
+                                                             ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2018-03-03 02:47:27 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2018-03-14 16:05:41 ERROR  : ERROR:  no existe la columna «issumary»
+LINE 1: select * from m_product where issumary='N' and isactive='Y'
+                                      ^
+2018-03-14 18:46:07 ERROR  : ERROR:  no existe la columna «m_pricelist» en la relación «c_bpartner»
+LINE 1: update c_bpartner set m_pricelist = 2000005, c_paymentterm_i...
+                              ^
+2018-03-15 23:09:11 ERROR  : ERROR:  división por cero
+2018-03-15 23:10:58 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2018-03-15 23:11:01 ERROR  : ERROR:  división por cero
+2018-03-15 23:11:06 ERROR  : ERROR:  división por cero
+2018-03-15 23:11:09 ERROR  : ERROR:  división por cero
+2018-03-15 23:11:13 ERROR  : ERROR:  división por cero
+2018-03-15 23:18:40 ERROR  : ERROR:  división por cero
+2018-03-15 23:19:19 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2018-03-15 23:19:50 ERROR  : could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "13.179.200.195" and accepting
+	TCP/IP connections on port 6448?
+2018-03-15 23:20:13 ERROR  : could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "13.179.200.195" and accepting
+	TCP/IP connections on port 6448?
+2018-03-15 23:20:26 ERROR  : ERROR:  división por cero
+2018-03-15 23:28:03 ERROR  : ERROR:  división por cero
+2018-03-15 23:55:52 ERROR  : ERROR:  división por cero
+2018-03-15 23:57:01 ERROR  : ERROR:  división por cero
+2018-03-15 23:57:07 ERROR  : ERROR:  división por cero
+2018-03-19 15:38:42 ERROR  : ERROR:  referencia a la entrada de la cláusula FROM para la tabla «a_asset» no válida
+LINE 1: ...AD_User_ID=u.AD_User_ID) WHERE a.IsActive='Y' AND A_Asset.As...
+                                                             ^
+HINT:  Probablemente quiera hacer referencia al alias de la tabla «a».
+2018-03-19 21:58:21 ERROR  : ERROR:  error de sintaxis en o cerca de «SELECT»
+LINE 1: ...uage='es_MX' AND p.IsActive='Y' ORDER BY SeqNo<= <SELECT t.N...
+                                                             ^
+2018-03-19 21:58:27 ERROR  : ERROR:  el operador no existe: numeric =?
+LINE 1: ...l_Rule_ID=vr.AD_Val_Rule_ID) WHERE p.AD_Process_ID=? AND t.A...
+                                                             ^
+HINT:  Ningún operador coincide con el nombre y el tipo de los argumentos. Puede ser necesario agregar conversiones explícitas de tipos.
+2018-03-21 10:03:21 ERROR  : ERROR:  no existe la columna «type1»
+LINE 1: select type1 from c_invoice
+               ^
+2018-03-21 17:24:39 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "adempiere"
+
+2018-03-21 17:24:49 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "adempiere"
+
+2018-03-23 11:04:50 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2018-03-24 13:56:49 ERROR  : ERROR:  relation "a_allocationline" does not exist
+LINE 1: select * from a_Allocationline
+                      ^
+2018-03-26 17:52:29 ERROR  : ERROR:  no existe la columna a.c_doctype_id
+LINE 1: (SELECT case when a.C_DocType_ID = 1000168 then  a.priceente...
+                          ^
+2018-03-26 17:52:40 ERROR  : ERROR:  no existe la columna «c_doctype_id»
+LINE 1: select c_doctype_id from c_invoiceline
+               ^
+2018-03-26 17:59:05 ERROR  : ERROR:  error de sintaxis en o cerca de «select»
+LINE 58: select c_doctype_id from c_invoiceline
+         ^

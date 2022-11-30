@@ -1,0 +1,6 @@
+#org.springsource.ide.eclipse.gradle.core.preferences.GradleProjectPreferences
+#Thu Jun 15 12:43:40 CLT 2017
+build.family.org.gradle.tooling.model.eclipse.HierarchicalEclipseProject=;
+org.springsource.ide.eclipse.gradle.rootprojectloc=
+// https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path
+compile group: 'com.jayway.jsonpath', name: 'json-path', version: '0.8.0'

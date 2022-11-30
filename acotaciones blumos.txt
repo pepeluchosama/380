@@ -1,0 +1,19 @@
+-se crea tabla:
+CREATE TABLE t_alter_column
+(
+  tablename name,
+  columnname name,
+  datatype name,
+  nullclause character varying(10),
+  defaultclause character varying(200)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE t_alter_column
+  OWNER TO adempiere;
+-sincronizar con db campo c_oum_id de tabla c_orderline
+-cambiar nombre de campo foreign por foreignBL en tabla m_product
+-migrar funcion damenombreproducto
+-crear campo useworkflow tipo y/n deault Y.
+-crear vista c_invoice_candidate_v
