@@ -166,6 +166,7 @@ public class ModelCCWarehouseRequest implements ModelValidator
 							inv.setC_DocType_ID(2000115);
 							inv.setDescription("Generado automaticamente desde solicitud "+req.getDocumentNo());
 							inv.set_CustomColumn("C_BPartner_ID", req.get_ValueAsInt("C_BPartner_ID"));
+							
 							//se guardan campos nuevos
 							if(req.get_ValueAsInt("C_BPartner_ID") > 0)
 							{
@@ -246,7 +247,9 @@ public class ModelCCWarehouseRequest implements ModelValidator
 										else
 											il.setC_Charge_ID(2000009);
 										//
+										
 										il.setDescription(line.getDescription());
+										
 										il.saveEx(po.get_TrxName());
 									}
 								}
@@ -285,6 +288,16 @@ public class ModelCCWarehouseRequest implements ModelValidator
 									il.setC_Charge_ID(2000009);
 								il.setDescription(line.getDescription());
 								il.saveEx(po.get_TrxName());
+								
+								//Rodrigo Olivares Hurtado
+								// actualizar a 
+								if(req.getAD_Org_ID() == 2000025 || req.getAD_Org_ID() == 2000026 || req.getAD_Org_ID() == 2000023) {
+									inv.completeIt();
+									inv.setDocStatus("CO");
+									inv.save();
+								} else {
+									
+								}
 							}
 						}						
 						//il.save();						
