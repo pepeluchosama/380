@@ -89,7 +89,9 @@ public class ModCCSetParhPDFBionet implements ModelValidator
 			{
 				MRequisition req = new MRequisition(po.getCtx(), ID_Req, po.get_TrxName());
 				req.set_CustomColumn("FileName", OFBForward.RutaPDFBionet()+info.getFileName());
+				info.set_CustomColumn("FileName", OFBForward.RutaPDFBionet()+info.getFileName());
 				req.saveEx(po.get_TrxName());
+				info.saveEx(po.get_TrxName());
 			}
 			else
 				log.config("No se ha encontrado ID de documento aociado. ID:"+ID_Req);
